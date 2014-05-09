@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+$(document).ready(function() {
+    alert('Be ready to down arrow keys');
+	$(document).keydown(function(e) {
+		if (e.keyCode == 37) alert('LEFT ARROW');
+		else if (e.keyCode == 38) alert('UP ARROW');
+		else if (e.keyCode == 39) alert('RIGHT ARROW');
+		else if (e.keyCode == 40) alert('DOWN ARROW');	
+	});
+});
+</script>
+</body>
+</html>
